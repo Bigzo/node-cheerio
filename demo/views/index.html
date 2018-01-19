@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <ul id="heroArray">
+
+    </ul>
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+    <script>
+       $(function () {
+          $.ajax({
+            url: '/herodata',
+            type: 'get',
+            dataType: 'json',
+            success: function (data) {
+              console.log('success' + data.length);
+              var html = ''
+              for (var i = 0; i < data.length; i++) {
+                html += "<li><img src=" + data[i] + "></li>"
+              }
+              $('#heroArray').html(html)
+            }
+          })
+        })
+    </script>
+  </body>
+</html>
