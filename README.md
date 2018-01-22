@@ -1,8 +1,8 @@
 # node-cheerio
-> Use node.js and cheerio to crawler
+> Use `node.js` and `cheerio` to `crawler`
 
 这是一个很简单的爬虫练习<br>
-三种处理获取数据的方式<br>
+三种处理获取数据的方式：<br>
 hero.js 将数据图片下载到hero文件<br>
 heroJSON.js 将数据保存为heroList.json文件<br>
 demo 直接将获得的数据写成api，前端用ajax获取并展示在页面上<br>
