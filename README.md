@@ -39,3 +39,4 @@ npm install
 ## 开启本地服务器localhost:3000
 nodemon app.js
 ```
+![](https://github.com/Bigzo/node-cheerio/blob/master/res.png)
