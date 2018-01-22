@@ -18,7 +18,7 @@
             type: 'get',
             dataType: 'json',
             success: function (data) {
-              console.log('success' + data.length);
+              console.log('success');
               var html = ''
               for (var i = 0; i < data.length; i++) {
                 html += "<li><img src=" + data[i] + "></li>"
